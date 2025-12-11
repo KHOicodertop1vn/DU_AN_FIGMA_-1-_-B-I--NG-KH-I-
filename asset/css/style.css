@@ -4,9 +4,9 @@
 html {
   font-size: 62.5%;
 }
-:root{
-  --font-Sen:var("Sen", sans-serif);
-  --font-Pop:var("Poppins", sans-serif);
+:root {
+  --font-Sen: var("Sen", sans-serif);
+  --font-Pop: var("Poppins", sans-serif);
 }
 /* khoi phuc lai co chu mac dinh */
 body {
@@ -84,7 +84,7 @@ a {
   color: white;
   background-color: #171100;
 }
-.btn:hover{
+.btn:hover {
   opacity: 0.5;
 }
 .header .btn-sign-up {
@@ -106,7 +106,7 @@ a {
   width: 183;
   height: 56;
 }
-.hero .hero_sumary .item + .item{
+.hero .hero_sumary .item + .item {
   margin-top: 22px;
 }
 .hero_sumary .item .info {
@@ -166,7 +166,7 @@ a {
   font-style: Regular;
   font-size: 18px;
   line-height: 30px;
-  color: #5F5B53;
+  color: #5f5b53;
 }
 
 .hero .cta-group .btn {
@@ -180,7 +180,7 @@ a {
 .hero .content-block .watch-video {
   display: flex;
   align-items: center;
-  border:none ;
+  border: none;
   background-color: #fffcf4;
   cursor: pointer;
 }
@@ -196,7 +196,7 @@ a {
   margin-right: 14px;
   box-shadow: 0 16px 32px #0000000d;
 }
-.hero .content-block .watch-video span{
+.hero .content-block .watch-video span {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.6667;
@@ -211,7 +211,7 @@ a {
   display: flex;
   align-items: center;
 }
-.hero .hero_sumary .icon{
+.hero .hero_sumary .icon {
   display: flex;
   align-items: center;
 }
@@ -222,11 +222,132 @@ a {
   font-size: 4.4rem;
   line-height: 1.23;
   margin-right: 15px;
-  color:#171100;
+  color: #171100;
 }
-.hero .stats strong:nth-child(2){
+.hero .stats strong:nth-child(2) {
   margin-left: 28px;
 }
-.hero .stats{
+.hero .stats {
   margin-top: -63px;
+}
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.top {
+  display: flex;
+}
+.top .heading {
+  width: 458px;
+  height: 124px;
+}
+.top .heading h1 {
+  font-family: var(--font-Sen);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 3.8rem;
+  line-height: 4.5rem;
+  letter-spacing: -2%;
+}
+.top .heading .desc {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.top .move {
+  align-self: center;
+  margin-left: auto;
+  display: flex;
+  flex: 0 1;
+  flex-wrap: nowrap;
+  gap: 18px;
+}
+.top .move_button {
+  font: size 2.5rem;
+  color: #ffb900;
+  opacity: 1;
+  border: 1px solid #ffb900;
+  width: 40px;
+  height: 40px;
+  display: flex; /* để căn icon/text vào giữa */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* màu chữ */
+  border-radius: 50%;
+}
+.top .move_button:hover {
+  background-color: #ffb900;
+  color: #fff;
+}
+.popular .course-items .info {
+  padding: 16px 22px 22px;
+}
+.courses-list {
+  display: flex;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+.courses-list .course-items {
+  width: 370px;
+  border-radius: 12px;
+  border: 1px solid #E2DFDA;
+  background-color: #fff;
+}
+.courses-list .course-items:hover{
+  box-shadow: 0px 18px 36px 0px #0000000D;
+  border: none;
+}
+.courses-list .course-items .thumb {
+  height: 278px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px 12px 0 0 ;
+}
+.course-items .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.courses-list .course-items .heading .title,
+.courses-list .course-items .price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  letter-spacing: 0%;
+}
+.courses-list .course-items .desc {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #5f5b53;
+}
+.courses-list .course-items .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn .btn-book {
+  border-radius: 25px;
+  font-size: 14rem;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.courses-list .course-items .bottom .btn-book:hover {
+  background-color: #ffb900;
+  opacity: 1;
+}
+.course-items .heading .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.course-items .heading .rating .vale {
+  font-weight: 400;
+  font-size: 16px;
 }
