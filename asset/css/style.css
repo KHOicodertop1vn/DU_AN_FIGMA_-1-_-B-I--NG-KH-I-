@@ -95,6 +95,7 @@ a {
   padding: 0px 16px;
   color: white;
   background-color: #171100;
+  cursor: pointer;
 }
 .btn:hover {
   opacity: 0.5;
@@ -458,6 +459,9 @@ a {
   gap: 28px;
 }
 .feature .body_feature .right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 120px;
 }
 .feature .body_feature .right-col .heading {
@@ -468,7 +472,6 @@ a {
   line-height: 48px;
   letter-spacing: -2%;
   margin-bottom: 15px;
-  margin-top: 70px;
 }
 
 .feature .body_feature .right-col .block-content {
@@ -499,6 +502,7 @@ a {
 .feature_number_2 .body_feature {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
 }
 .feature_number_2 {
   margin-top: 70px;
@@ -509,7 +513,10 @@ a {
   gap: 28px;
 }
 .feature_number_2 .body_feature .right-col {
-  margin-right: 126px;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .feature_number_2 .body_feature .right-col .heading {
   font-family: var(--font-Sen);
@@ -519,7 +526,6 @@ a {
   line-height: 48px;
   letter-spacing: -2%;
   margin-bottom: 15px;
-  margin-top: 72px;
 }
 
 .feature_number_2 .body_feature .right-col .block-content {
@@ -528,9 +534,6 @@ a {
   line-height: 28px;
   letter-spacing: 0%;
   color: #5f5b53;
-}
-.feature_number_2 .body_feature .right-col .block-content p:first-child {
-  margin-bottom: 15px;
 }
 .feature_number_2 .body_feature .right-col .btn-sign-up-2 {
   margin-top: 30px;
@@ -543,7 +546,7 @@ a {
 .blog {
   padding: 50px 0;
   margin-top: 135px;
-  background-color: #FFFCF4;
+  background-color: #fffcf4;
 }
 .blog .body_blog .top {
   display: flex;
@@ -595,6 +598,8 @@ a {
   line-height: 26px;
   position: relative;
   padding-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
 }
 .blog .body_blog .course-items .btn .btn-book {
   margin-top: 10px;
@@ -607,7 +612,6 @@ a {
   display: inline-block;
   border-radius: 50%;
   margin-right: 4px;
-  vertical-align: middle;
 }
 .blog .body_blog .course-items .heading .date::after {
   position: absolute;
@@ -621,29 +625,90 @@ a {
   background: #e2dfda;
   width: 160px;
 }
-.blog .body_blog .dot_group{
+.blog .body_blog .dot_group {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 38px;
   gap: 6px;
 }
-.blog .body_blog .dot_group .dot{
+.blog .body_blog .dot_group .dot {
   width: 6px;
   height: 6px;
-  background-color: #5F5B53;
+  background-color: #5f5b53;
   border-radius: 50%;
 }
-.blog .body_blog .dot_group .dot:active{
-  background-color: #FFB900;
+.blog .body_blog .dot_group .dot:active {
+  background-color: #ffb900;
 }
-footer .top{
-  margin-top: 96px;
-}
+
 /* ========================FOOTER======================== */
-footer.top .column_1{
+
+footer .top {
+  padding: 96px 0px 38px;
 }
-footer .top .column .info{
+footer {
+  background-color: #2e2100;
+}
+footer .top .column {
+  max-width: 250px;
+}
+footer .top .column_1 .icon_brand {
   display: flex;
-  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+footer .top .column_1 img {
+  margin-bottom: 20px;
+}
+footer .top .column_1 .desc,
+footer .top .column_2 .component .info,
+footer .top .column_3 .component .info {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+footer .top .column_2 .component .info,
+footer .top .column_3 .component .info{
+  display: inline-block;
+  margin-bottom: 12px;
+}
+footer .top .heading .content-heading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  height: 44px;
+  border-bottom: 1px solid #59554b;
+  width: 130px;
+}
+footer .top .heading {
+  height: 70px;
+}
+footer .top .column_1 {
+  width: 35%;
+}
+footer .top .column_1 .desc {
+  max-width: 267px;
+}
+footer .top .column_3 .component strong {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #fff;
+}
+footer .footer_bottom {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  padding: 28px 0px;
+  border-top: 1px solid #59554B;
+  color: #807D74;
+}
+footer .top .column_2 .component li:last-child a,
+footer .top .column_3  li:last-child a{
+  margin-bottom: 0px;
 }
